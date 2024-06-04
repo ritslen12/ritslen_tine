@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\PracticeRepo;
 
-class PracticeRepoController extends Controller
+class PracticeController extends Controller
 {
     public function index()
     {
