@@ -14,7 +14,7 @@
                         @method('PUT')
 
                         <div class="form-group{{ $errors->has('first_name') ? ' has-error' : '' }}">
-                            <label for="first_name" class="col-md-4 control-label">First Name</label>
+                            <label for="first_name" class="col-md-4 control-label">F Name</label>
 
                             <div class="col-md-6">
                                 <input id="first_name" type="text" class="form-control" name="first_name" value="{{ $employee->first_name }}" required autofocus>
@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
-                            <label for="last_name" class="col-md-4 control-label">Last Name</label>
+                            <label for="last_name" class="col-md-4 control-label">L Name</label>
 
                             <div class="col-md-6">
                                 <input id="last_name" type="text" class="form-control" name="last_name" value="{{ $employee->last_name }}" required>
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('middle_name') ? ' has-error' : '' }}">
-                            <label for="middle_name" class="col-md-4 control-label">Middle Name</label>
+                            <label for="middle_name" class="col-md-4 control-label">M Name</label>
 
                             <div class="col-md-6">
                                 <input id="middle_name" type="text" class="form-control" name="middle_name" value="{{ $employee->middle_name }}">
