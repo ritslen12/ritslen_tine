@@ -110,38 +110,7 @@
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                @foreach ($employees as $key => $employee)
-                                <tr>
-                                    <td>{{ ++$key }}</td>
-                                    <td>{{ $employee->first_name }}</td>
-                                    <td>{{ $employee->last_name }}</td>
-                                    <td>{{ $employee->middle_name }}</td>
-                                    <td>{{ $employee->address }}</td>
-                                    <td>{{ $employee->country }}</td>
-                                    <td>{{ $employee->state }}</td>
-                                    <td>{{ $employee->city }}</td>
-                                    <td>{{ $employee->zip }}</td>
-                                    <td>{{ $employee->age }}</td>
-                                    <td>{{ $employee->birthday }}</td>
-                                    <td>{{ $employee->hire_date }}</td>
-                                    <td>{{ $employee->department }}</td>
-                                    <td>{{ $employee->division }}</td>
-                                    <td>
-                                        <div class="btn-group-vertical" role="group" aria-label="Employee Actions">
-                                            <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-primary btn-sm btn-block">
-                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
-                                            </a>
-                                            <form action="{{ route('employees.destroy', $employee->id) }}" method="POST" style="display:inline;">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger btn-sm btn-block">Delete</button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
+                            
                         </table>
                     </div>
                 </div>
