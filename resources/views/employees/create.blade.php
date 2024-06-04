@@ -10,7 +10,7 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('employee-management.store') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group{{ $errors->has('firstname') ? ' has-error' : '' }}">
-                            <label for="firstname" class="col-md-4 control-label">First Name</label>
+                            <label for="firstname" class="col-md-4 control-label">F Name</label>
 
                             <div class="col-md-6">
                                 <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus>
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}">
-                            <label for="lastname" class="col-md-4 control-label">Last Name</label>
+                            <label for="lastname" class="col-md-4 control-label">L Name</label>
 
                             <div class="col-md-6">
                                 <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Birthday</label>
+                            <label class="col-md-4 control-label">Date Of Birth</label>
                             <div class="col-md-6">
                                 <div class="input-group date">
                                     <div class="input-group-addon">
