@@ -13,6 +13,8 @@
                 <h1 align="center" class="mt-5" style="color: white;"><b>Employee Management</b></h1>
               </div>
             
+                <!-- forms -->
+
                 <div class="card-body">
                     <form method="POST" action="{{ route('employees.store') }}" class="form-horizontal needs-validation" style="padding: 1%;" novalidate>
                         @csrf
@@ -84,7 +86,9 @@
                         <button type="submit" class="btn btn-info">Submit</button>
 
                     </form>
-                </div>
+                </div> 
+                <!-- end of forms -->
+
             </div>
             <div class="card">
                 <div class="card-body">
