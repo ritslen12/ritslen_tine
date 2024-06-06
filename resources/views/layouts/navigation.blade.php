@@ -24,7 +24,7 @@
                 <a href="{{ route('employees.index') }}" class="nav-link">
                 <i class="nav-icon fas fa-circle nav-icon"></i>
                     <p>
-                        {{ __('User') }}
+                        {{ __('Employee Management') }}
                     </p>
                 </a>
             </li>
